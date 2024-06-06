@@ -1,4 +1,4 @@
-@extends('layouts.app')
+<!-- @extends('layouts.app')
 
 @section('title', 'BakulPay | Wallet')
 
@@ -12,4 +12,4 @@
     <div class="isi">
         Pending
     </div>
-@endsection
+@endsection -->

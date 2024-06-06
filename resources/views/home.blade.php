@@ -19,11 +19,20 @@
                 </div>
             </div> --}}
 
+            <div class="data-item">
+                <div class="data-background">
+                    <img src="{{ asset('assets/images/frame 89.png') }}" alt="Image Alt Text">
+                    <div class="overlay-text-dashboard">
+                        <h2 class="overlay-text-dashboard">Dashboard</h2>
+                    </div>
+                </div>
+            </div>
+
             <div class="data-item" id="dropdownContainer">
                 <div class="data-isi" id="dropdownTrigger">
                     <div class="data-cont1">{{ $totalPending }}</div>
                     <div class="data-cont2">New Order</div>
-                    <div><img src="{{ asset('assets/images/rate_naik.png') }}" alt="Image Alt Text"></div>
+                    <!-- <div><img src="{{ asset('assets/images/rate_naik.png') }}" alt="Image Alt Text"></div> -->
                     <div class="data-keterangan" id="viewMoreTrigger">View More<iconify-icon icon="maki:arrow"></iconify-icon>
                     </div>
                 </div>
@@ -34,27 +43,17 @@
                 </div>
             </div>
 
-            <div class="data-item">
+            <!-- <div class="data-item">
                 <div class="data-isi">
                     <div class="data-cont1">{{ $totalNewUsers }}</div>
-                    <div class="data-cont2">New Users</div>
-                    <div><img src="{{ asset('assets/images/rate_turun.png') }}" alt="Image Alt Text"></div>
+                    <div class="data-cont2">New Users</div> -->
+                    <!-- <div><img src="{{ asset('assets/images/rate_turun.png') }}" alt="Image Alt Text"></div>
                     <a href="{{ route('cs_management') }}">
                         <div class="data-keterangan">View More<iconify-icon icon="maki:arrow"></iconify-icon></div>
-                    </a>
-                </div>
-
-            </div>
-            <div class="data-item">
-                <div class="data-background">
-                    <img src="{{ asset('assets/images/frame 89.png') }}" alt="Image Alt Text">
-                    <div class="overlay-text">
-                        <div class="overlay-text-1">My Balance</div>
-                        <div class="overlay-text-2">$ {{ number_format($totalPembayaran / 14000, 0) }}</div>
-                        <div class="overlay-text-2">IDR {{ number_format($totalPembayaran) }}</div>
-                    </div>
-                </div>
-            </div>
+                    </a> -->
+                <!-- </div> -->
+            <!-- </div> -->
+            
         </div>
         <div class="data-container">
             <div class="data-item_1">

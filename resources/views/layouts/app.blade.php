@@ -1047,8 +1047,8 @@ CONTENT STYLE
         #content .data-item .data-keterangan {
             background-image: linear-gradient(to right, #37398b, #00a8ed);
             color: #ffffff;
-            margin-top: 9%;
-            height: 43px;
+            margin-top: 2%;
+            height: 40px;
             font-size: 14px;
             padding-top: 10px;
             padding-left: 18px;
@@ -1112,6 +1112,14 @@ CONTENT STYLE
             transform: translate(-50%, -50%);
             color: white;
             /* Set the text color */
+            font-weight: bold;
+        }
+        .overlay-text-dashboard {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
             font-weight: bold;
         }
 
@@ -1420,11 +1428,11 @@ MEDIAQUERIES
                         <span class="arrow-icon"><iconify-icon icon="fe:arrow-down"></iconify-icon></span>
                     </a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li
+                        <!-- <li
                             class="{{ Request::is('payment*') || Request::is('form_payment*') || Request::is('edit_payment*') ? 'active' : '' }}">
                             <a href="{{ route('payment') }}"><iconify-icon
                                     icon="material-symbols:payments"></iconify-icon>Payment</a>
-                        </li>
+                        </li> -->
 
                         <li class="{{ Request::is('top-up*') || Request::is('edit_topup*') ? 'active' : '' }}">
                             <a href="{{ route('topup') }}"><iconify-icon
@@ -1438,9 +1446,9 @@ MEDIAQUERIES
                     </ul>
                 </li>
 
-                <li class="{{ Request::is('wallet') ? 'active' : '' }}">
+                <!-- <li class="{{ Request::is('wallet') ? 'active' : '' }}">
                     <a href="{{ route('wallet') }}"><iconify-icon icon="solar:wallet-bold"></iconify-icon>Wallet</a>
-                </li>
+                </li> -->
 
                 <li
                     class="{{ Request::is('bank_wd*') || Request::is('transactionmd*') || Request::is('pay_md*') || Request::is('form_transactionmd*') || Request::is('edit-transactionmd*') || Request::is('form_paymentmd*') || Request::is('edit-paymentmd*') || Request::is('form_bankwd*') || Request::is('edit-bankwd*') ? 'active' : '' }}">
@@ -1480,11 +1488,11 @@ MEDIAQUERIES
                             <a href="{{ route('rate') }}"><iconify-icon
                                     icon="fa6-solid:money-bill"></iconify-icon>Rate</a>
                         </li>
-                        <li class="{{ Request::is('cs_management*') ? 'active' : '' }}">
+                        <!-- <li class="{{ Request::is('cs_management*') ? 'active' : '' }}">
                             <a href="{{ route('cs_management') }}"><iconify-icon
                                     icon="mdi:user-outline"></iconify-icon>Customer
                                 Management</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </li>
                 <li class="{{ Request::is('/logout') ? 'active' : '' }}">
