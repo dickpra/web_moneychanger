@@ -24,8 +24,7 @@
                     <div class="data-cont1">{{ $totalPending }}</div>
                     <div class="data-cont2">New Order</div>
                     <div><img src="{{ asset('assets/images/rate_naik.png') }}" alt="Image Alt Text"></div>
-                    <div class="data-keterangan" id="viewMoreTrigger">
-                        View More<iconify-icon icon="maki:arrow"></iconify-icon>
+                    <div class="data-keterangan" id="viewMoreTrigger">View More<iconify-icon icon="maki:arrow"></iconify-icon>
                     </div>
                 </div>
                 <div class="dropdown-content" id="dropdownContent">

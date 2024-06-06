@@ -27,21 +27,21 @@ class HomeController extends Controller
         // Calculate the total count of new users
         $totalNewUsers = $newUsersLastMonth->count();
 
-        // // Fetch pending topup and withdraw records
-        // $pendingTopups = TopUp::where('status', 'pending')->get();
-        // $pendingWithdraws = Withdraw::where('status', 'pending')->get();
-
-        // // Fetch pending topup and withdraw records
-        // $statusTopups = TopUp::where('status', 'success')->get();
-        // $statusWithdraws = Withdraw::where('status', 'success')->get();
+        // Fetch pending topup and withdraw records
+        $pendingTopups = TopUp::where('status', 'pending')->get();
+        $pendingWithdraws = Withdraw::where('status', 'pending')->get();
 
         // Fetch pending topup and withdraw records
-        $pendingTopups = TopUp::where('email')->get();
-        $pendingWithdraws = Withdraw::where('email')->get();
+        $statusTopups = TopUp::where('status', 'success')->get();
+        $statusWithdraws = Withdraw::where('status', 'success')->get();
 
-        // Fetch pending topup and withdraw records
-        $statusTopups = TopUp::where('email')->get();
-        $statusWithdraws = Withdraw::where('email')->get();
+        // // Fetch pending topup and withdraw records
+        // $pendingTopups = TopUp::where('email')->get();
+        // $pendingWithdraws = Withdraw::where('email')->get();
+
+        // // Fetch pending topup and withdraw records
+        // $statusTopups = TopUp::where('email')->get();
+        // $statusWithdraws = Withdraw::where('email')->get();
 
         // Calculate the total sum of total_pembayaran from both tables
         $totalPembayaran = $this->sumTotalPembayaran($statusTopups) + $this->sumTotalPembayaran($statusWithdraws);
