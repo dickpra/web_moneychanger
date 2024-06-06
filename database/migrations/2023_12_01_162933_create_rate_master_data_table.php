@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('no_rekening');
             $table->string('biaya_transaksi');
             $table->string('active');
-            $table->string('price');
             $table->string('icons');
             $table->string('type');
             $table->float('price');
