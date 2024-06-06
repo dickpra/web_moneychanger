@@ -483,7 +483,7 @@ class RateMasterDataController extends Controller
             'type' => 'required|in:Top Up,Withdraw',
             'icons' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'nama' => 'nullable|string',
-            'no_rekening' => 'nullable',
+            'no_rekening' => 'nullable|string',
             'nama_blockchain.*' => 'nullable|string', // Validasi untuk setiap input blockchain
         ]);
 

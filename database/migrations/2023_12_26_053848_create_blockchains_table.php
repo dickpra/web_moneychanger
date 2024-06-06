@@ -13,9 +13,12 @@ return new class extends Migration
     {
         Schema::create('blockchain', function (Blueprint $table) {
             $table->id();
-            $table->integer('id_rate');
-            $table->string('nama_bank');
-            $table->string('nama_blockchain');
+            $table->integer('id_rate')->nullable();
+            $table->string('nama_bank')->nullable();
+            $table->string('type')->nullable();
+            $table->string('nama_blockchain')->nullable();
+            $table->string('active')->nullable();
+            $table->string('rekening_wallet')->nullable();
             $table->timestamps();
         });
     }

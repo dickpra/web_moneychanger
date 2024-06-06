@@ -13,14 +13,14 @@ return new class extends Migration
     {
         Schema::create('rate_master_data', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_bank');
-            $table->string('nama');
-            $table->string('no_rekening');
-            $table->string('biaya_transaksi');
-            $table->string('active');
+            $table->string('nama_bank')->nullable();
+            $table->string('nama')->nullable();
+            $table->string('no_rekening')->nullable();
+            $table->string('biaya_transaksi')->nullable();
+            $table->string('active')->nullable();
             $table->string('icons');
-            $table->string('type');
-            $table->float('price');
+            $table->string('type')->nullable();
+            $table->float('price')->nullable();
             $table->timestamps();
         });
     }
