@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('nama_blockchain')->nullable();
             $table->string('active')->nullable();
             $table->string('price');
-            $table->string('biaya_transaksi')->nullable();
+            $table->string('biaya_transaksi');
             $table->string('rekening_wallet')->nullable();
             $table->timestamps();
         });
