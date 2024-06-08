@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('type')->nullable();
             $table->string('nama_blockchain')->nullable();
             $table->string('active')->nullable();
+            $table->string('price');
+            $table->string('biaya_transaksi')->nullable();
             $table->string('rekening_wallet')->nullable();
             $table->timestamps();
         });
